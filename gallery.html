@@ -64,7 +64,7 @@
 
 								<h2>Gallery <span> - My Work.</span></h2>
 
-								<p class="gallery-categories">
+								<p class="gallery-categories">Choose a Gallery:
 									<a onclick="showdiv('blackGrey')" href="#">Black and Grey</a>/
 									<a onclick="showdiv('color')" href="#">Color</a>/
 									<a onclick="showdiv('charcoals')" href="#">Charcoals</a>
@@ -75,7 +75,7 @@
 						<!--content-->
 						<article class="gallery">
 
-							<div style="display:block;" id="blackGrey">
+							<div style="display:none;" id="blackGrey">
 							<ul class="clearfix">
 								<li>
 									<a href="./images/BGalien.jpg" id="" class="lightbox"><img src="./images/BGalien_thumb.jpg" /></a>
@@ -204,28 +204,6 @@
 
 				<!-- Custom JS -->
 				<script src="js/custom.js"></script>
-
-				<script type="text/javascript">
-
-				$(function() {
-					$('a.lightbox').lightBox({
-					imageLoading: './images/lightbox-ico-loading.gif',
-					imageBtnClose: './images/lightbox-btn-close.gif',
-					imageBtnPrev: './images/lightbox-btn-prev.gif',
-					imageBtnNext: './images/lightbox-btn-next.gif'
-				});
-				});
-
-				var _hidediv = null;
-					function showdiv(id) {
-    				if(_hidediv)
-        		_hidediv();
-    		var div = document.getElementById(id);
-    			div.style.display = 'block';
-    			_hidediv = function () { div.style.display = 'none'; };
-}
-
-				</script>
 		</body>
 </html>
 <!-- Localized -->
